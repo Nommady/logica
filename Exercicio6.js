@@ -5,8 +5,8 @@ var alt = rs.questionFloat("Digite sua altura: ")
 
 if (sex === 1) {
     var result = (62.1 * alt) - 44.7
-    console.log("Seu peso ideal é: ", result)
+    console.log("Seu peso ideal é: ", result.toFixed(2))
 } else {
   var result = (72.7 * alt) - 58
-  console.log("Seu peso ideal é: ", result)}
+  console.log("Seu peso ideal é: ", result.toFixed(2))}
 
