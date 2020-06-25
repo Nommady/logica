@@ -21,6 +21,17 @@ Exercicio 7 - db.restaurantes.find({
     })
 
 Exercicio 8 - db.restaurantes.find({
-    "grades.score":{$gt:80,$lt: 100} 
+    grades:{$elemMatch:{"score":{$gt:80, $lt:100}}} 
     })
 
+Exercicio 9 - db.restaurantes.find({
+    name: /^Wil/ 
+    }, {restaurant_id:1, name:1, borough:1 cuisine:1 _id:0})
+
+Exercico 10 - db.restaurantes.find({
+    borough: "Bronx", 
+    $or:[{cuisine: "American "}, {cuisine: "Chinese"}]
+
+    })
+
+Exercicio 11 -
